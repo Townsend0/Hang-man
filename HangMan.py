@@ -286,7 +286,7 @@ f=[]
 for d in range(0,len(b)):
     f.append('_')
 h=0
-for h in range(0,7):
+while h!=7:
     c=input("\n\nGuess a letter: ").lower()
     e=0
     for d in range(0,len(b)):
@@ -298,6 +298,7 @@ for h in range(0,7):
     if e==len(b):
         print("wrong guess\n")
         print(stages[-h-1])
+        h+=1
     else: 
         print("right guess\n")
     for d in range(0,len(f)):
